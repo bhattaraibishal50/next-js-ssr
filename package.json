@@ -5,19 +5,21 @@
   "scripts": {
     "bootstrap": "yarn install; yarn --cwd functions install",
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn format; next build",
     "start": "next start",
     "build-functions": "yarn --cwd functions run build",
-    "lint": "yarn format && next lint",
+    "lint": "yarn format; next lint",
     "format": "prettier --write src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
     "firebase": "^9.9.3",
     "next": "12.2.5",
     "next-images": "^1.8.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "reactstrap": "^9.1.3"
   },
   "devDependencies": {
     "@types/jest": "^28.1.7",
