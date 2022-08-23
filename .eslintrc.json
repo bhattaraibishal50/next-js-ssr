@@ -1,4 +1,4 @@
- {
+{
   "env": {
     "node": true,
     "browser": true,
@@ -39,7 +39,13 @@
     "react/display-name": 0,
     "react-hooks/exhaustive-deps": 0,
     "sort-imports": "off",
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "import/first": "error",
     "import/no-duplicates": "error",
     "react/jsx-no-target-blank": 0,

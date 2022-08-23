@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "build-functions": "yarn --cwd functions run build",
-    "lint": "next lint"
+    "lint": "yarn format && next lint",
+    "format": "prettier --write src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "axios": "^0.27.2",
