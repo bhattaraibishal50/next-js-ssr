@@ -1,4 +1,4 @@
- {
+{
   "env": {
     "node": true,
     "browser": true,
@@ -39,7 +39,13 @@
     "react/display-name": 0,
     "react-hooks/exhaustive-deps": 0,
     "sort-imports": "off",
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "import/first": "error",
     "import/no-duplicates": "error",
     "react/jsx-no-target-blank": 0,
@@ -55,6 +61,6 @@
     "react/jsx-uses-react": 0,
     "react/react-in-jsx-scope": 0,
     "no-unsafe-optional-chaining": 0,
-    "react/jsx-curly-brace-presence": ["error", "always"]
+    "react/jsx-curly-brace-presence": 0
   }
 }

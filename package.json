@@ -8,8 +8,12 @@
     "build": "next build",
     "start": "next start",
     "build-functions": "yarn --cwd functions run build",
-    "lint": "next lint"
+    "lint": "yarn format && next lint",
+    "format": "prettier --write src/**/*.{ts,tsx}"
   },
+  "precommit": [
+    "lint"
+  ],
   "dependencies": {
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
@@ -32,6 +36,7 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4"
   }
